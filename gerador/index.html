@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senha Premium</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonte moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="card">
+    <h1>🔐 Gerador de Senha</h1>
+
+    <div class="input-group">
+      <label>Tamanho: <span id="valor">12</span></label>
+      <input type="range" min="6" max="30" value="12" id="slider">
+    </div>
+
+    <div class="options">
+      <label><input type="checkbox" id="lower" checked> Letras minúsculas</label>
+      <label><input type="checkbox" id="upper" checked> Letras maiúsculas</label>
+      <label><input type="checkbox" id="number" checked> Números</label>
+      <label><input type="checkbox" id="symbol"> Símbolos</label>
+    </div>
+
+    <button id="generate">Gerar senha</button>
+
+    <div class="result">
+      <input type="text" id="password" readonly>
+      <button id="copy">📋</button>
+    </div>
+
+    <div class="strength">
+      <div id="bar"></div>
+    </div>
+
+    <p id="feedback"></p>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
