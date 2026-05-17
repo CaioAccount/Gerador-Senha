@@ -28,6 +28,7 @@ Sem frameworks, sem bibliotecas externas e sem enviar dados para a internet.
 ```
 
 🔒 **Segurança**
+
 As senhas são geradas usando:
 
 crypto.getRandomValues()
